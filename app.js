@@ -9,13 +9,7 @@ connectDB();
 
 const app = express();
 
-// Define CORS options
-const corsOptions = {
-    origin: 'https://movie-library-frontend.netlify.app',
-    optionsSuccessStatus: 200
-  };
-  
-  app.use(cors(corsOptions));
+  app.use(cors());
   
   app.use(express.json());
 
